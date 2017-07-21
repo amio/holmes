@@ -1,11 +1,14 @@
 {
   "name": "holmes",
   "version": "1.0.0",
-  "description": "Dock for homes.",
+  "description": "Amio's dock for homes.",
   "repository": "amio/holmes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "inspect": "npx --node-arg=--inspect next"
   },
   "author": "Amio <amio.cn@gmail.com>",
   "license": "ISC",
