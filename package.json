@@ -1,0 +1,17 @@
+{
+  "name": "holmes",
+  "version": "1.0.0",
+  "description": "Dock for homes.",
+  "repository": "amio/holmes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amio <amio.cn@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^3.0.1-beta.18",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
