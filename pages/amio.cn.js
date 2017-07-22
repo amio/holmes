@@ -1,7 +1,5 @@
+import Universe from './universe.js'
+
 export default (props) => {
-  return (
-    <h1>
-      amio.cn
-    </h1>
-  )
+  return <Universe title='amio' desc='what are you looking for' />
 }

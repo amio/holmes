@@ -1,7 +1,61 @@
+import Head from 'next/head'
+
 export default (props) => {
   return (
-    <h1>
-      UNIVERSE & {props.host}
-    </h1>
+    <div style={styles.wrapper}>
+      <Head>
+        <title>The {props.host}</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+      </Head>
+      <div>
+        <style dangerouslySetInnerHTML={{ __html: 'body { margin: 0 }' }} />
+        <h1 style={styles.h1}>{ props.title || 'UNIVERSE' }</h1>
+        <div style={styles.desc}>
+          <h2 style={styles.h2}>{props.desc || props.host}</h2>
+        </div>
+      </div>
+    </div>
   )
+}
+
+const styles = {
+  wrapper: {
+    color: '#000',
+    background: '#fff',
+    fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, sans-serif',
+    height: '100vh',
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  desc: {
+    display: 'inline-block',
+    textAlign: 'left',
+    lineHeight: '50px',
+    height: '50px',
+    verticalAlign: 'middle'
+  },
+
+  h1: {
+    display: 'inline-block',
+    borderRight: '1px solid rgba(0, 0, 0,.3)',
+    margin: 0,
+    marginRight: '21px',
+    paddingRight: '24px',
+    fontSize: '32px',
+    lineHeight: '50px',
+    fontWeight: 500,
+    verticalAlign: 'top',
+    textTransform: 'uppercase'
+  },
+
+  h2: {
+    fontSize: '16px',
+    fontWeight: 'lighter',
+    margin: 0,
+    padding: 0
+  }
 }
