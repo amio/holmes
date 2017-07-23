@@ -4,7 +4,7 @@ export default (props) => {
   return (
     <div style={styles.wrapper}>
       <Head>
-        <title>The {props.host}</title>
+        <title>The {props.title || props.host}</title>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <div>
