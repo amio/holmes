@@ -16,7 +16,7 @@ export default (props) => {
         html, body {
           height: 100%;
           margin: 0;
-          font: 14px/1.8em sans-serif;
+          font: 14px/1.8em -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Avenir, sans-serif;
         }
       `}</style>
     </FullViewport>
