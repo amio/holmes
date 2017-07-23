@@ -8,7 +8,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "inspect": "npx --node-arg=--inspect next"
+    "inspect": "npx --node-arg=--inspect next",
+    "deploy": "now rm holmes --safe && now && now alias"
   },
   "author": "Amio <amio.cn@gmail.com>",
   "license": "ISC",
