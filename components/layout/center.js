@@ -1,14 +1,15 @@
 export default (props) => {
   return (
-    <div style={{...wrapperStyle, ...props.style}}>
+    <div style={props.style}>
       {props.children}
+      <style jsx>{`
+        div {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      `}</style>
     </div>
   )
-}
-
-const wrapperStyle = {
-  height: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center'
 }

@@ -1,16 +1,11 @@
 export default (props) => {
   return (
-    <div>
+    <div style={props.style}>
       {props.children}
       <style jsx>{`
         div {
           height: 100vh;
-        }
-      `}</style>
-      <style global jsx>{`
-        html, body {
-          margin: 0;
-          height: 100%;
+          width: 100vw;
         }
       `}</style>
     </div>

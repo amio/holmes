@@ -1,10 +1,10 @@
-import FullPage from '../components/layout/full-page.js'
+import Base from '../components/layout/base.js'
 import Center from '../components/layout/center.js'
 import Amcon from '../static/Amcon.svg'
 
 export default (props) => {
   return (
-    <FullPage>
+    <Base title='Amio'>
       <Center>
         <Amcon className='amcon' />
         <style jsx>{`
@@ -24,6 +24,6 @@ export default (props) => {
           }
         `}</style>
       </Center>
-    </FullPage>
+    </Base>
   )
 }
