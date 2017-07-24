@@ -12,12 +12,10 @@ export default (props) => {
       </div>
 
       <div className='downside'>
-        <p className='links'>
-          <a href='http://blog.amio.us/'>Blog</a>
-          <a href='https://github.com/amio'>Github</a>
-          <a href='https://twitter.com/amiocn'>Twitter</a>
-          <a href='https://instagram.com/amiocn'>Instagram</a>
-        </p>
+        <a href='http://blog.amio.us/'>Blog</a>
+        <a href='https://github.com/amio'>Github</a>
+        <a href='https://twitter.com/amiocn'>Twitter</a>
+        <a href='https://instagram.com/amiocn'>Instagram</a>
       </div>
 
       <style jsx>{`
@@ -36,7 +34,7 @@ export default (props) => {
         }
         .downside a {
           color: #999;
-          margin: 2vw;
+          margin: 3vh 2vw;
           font-size: 16px;
           display: inline-block;
           text-decoration: none;
@@ -49,12 +47,9 @@ export default (props) => {
           border-bottom: 1px solid #EEE;
         }
         @media (max-width: 400px) {
-          .links {
+          .downside {
             display: flex;
             flex-direction: column;
-          }
-          .downside a {
-            margin: 3vh auto;
           }
         }
       `}</style>
