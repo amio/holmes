@@ -1,13 +1,13 @@
 import Base from '../components/layout/base.js'
 import Center from '../components/layout/center.js'
-import Amcon from '../static/Amcon.svg'
+import HeroIcon from '../components/hero-icon.js'
 
 export default (props) => {
   return (
     <Base title='Amio'>
       <div className='upside'>
         <Center className='upside'>
-          <Amcon className='amcon' />
+          <HeroIcon />
         </Center>
       </div>
 
@@ -24,40 +24,38 @@ export default (props) => {
         .upside {
           height: 50vh;
           background-color: #FAFAFA;
+          user-select: none;
         }
         .downside {
           height: 50vh;
           background-color: #222;
           text-align: center;
           box-sizing: border-box;
-          padding-top: 2rem;
+          padding-top: 1vh;
+          user-select: none;
         }
         .downside a {
-          color: #AAA;
+          color: #999;
           margin: 2vw;
           font-size: 16px;
+          display: inline-block;
           text-decoration: none;
           text-transform: uppercase;
           letter-spacing: 0.5px;
+          border-bottom: 1px solid transparent;
         }
         .downside a:hover {
           color: #EEE;
           border-bottom: 1px solid #EEE;
         }
-      `}</style>
-
-      <style global jsx>{`
-        body {
-          user-select: none;
-        }
-        .amcon {
-          border-radius: 100px;
-          width: 128px;
-          height: 128px;
-          background-color: #222;
-        }
-        .amcon path {
-          fill: white
+        @media (max-width: 400px) {
+          .links {
+            display: flex;
+            flex-direction: column;
+          }
+          .downside a {
+            margin: 3vh auto;
+          }
         }
       `}</style>
     </Base>
