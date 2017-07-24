@@ -7,7 +7,7 @@ export default class extends React.Component {
     setTimeout(() => {
       console.info('Redirecting to "/"')
       Router.replace('/')
-    }, 2000)
+    }, 3000)
   }
 
   render () {

@@ -12,7 +12,7 @@ export default (props) => {
         <style dangerouslySetInnerHTML={{ __html: 'body { margin: 0 }' }} />
         <h1 style={styles.h1}>{ props.title || 'UNIVERSE' }</h1>
         <div style={styles.desc}>
-          <h2 style={styles.h2}>{props.desc || props.host}</h2>
+          <h2 style={styles.h2}>{props.desc || props.host || '=.='}</h2>
         </div>
       </div>
     </div>
