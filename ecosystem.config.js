@@ -16,7 +16,7 @@ module.exports = {
       user: 'root',
       host: 'jins.io',
       path: '/var/www/holmes',
-      repo: 'git@github.com:amio/holmes.git',
+      repo: 'https://github.com/amio/holmes.git',
       ref: 'origin/master',
       'post-deploy': 'yarn install && yarn build && pm2 startOrRestart ecosystem.config.js'
     }
