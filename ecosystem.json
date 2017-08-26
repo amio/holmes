@@ -3,6 +3,7 @@
     "name": "holmes",
     "script": "npm",
     "args": "start",
+    "cwd": ".",
     "env": {
       "NODE_ENV": "production"
     }
@@ -14,7 +15,7 @@
       "path": "/var/www/holmes",
       "repo": "https://github.com/amio/holmes.git",
       "ref": "origin/master",
-      "post-deploy": "yarn install && yarn build && pm2 startOrRestart"
+      "post-deploy": "yarn install && yarn build && pm2 startOrRestart ecosystem.json"
     }
   }
 }
