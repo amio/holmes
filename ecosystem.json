@@ -3,7 +3,7 @@
     "name": "holmes",
     "script": "npm",
     "args": "start",
-    "cwd": ".",
+    "cwd": "/var/www/holmes/source",
     "env": {
       "NODE_ENV": "production"
     }
