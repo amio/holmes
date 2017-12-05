@@ -8,10 +8,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build & next export",
     "start": "next start",
     "inspect": "npx --node-arg=--inspect next",
-    "deploy": "now rm holmes --safe && now && now alias"
+    "deploy": "now rm holmes --safe && now && now alias",
+    "d:murm.net": "SUB_SITE=murm.net npm run build && now deploy out -n holmes"
   },
   "dependencies": {
     "babel-plugin-inline-react-svg": "^0.5.2",

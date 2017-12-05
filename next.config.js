@@ -1,7 +1,7 @@
 module.exports = {
   exportPathMap: function () {
     return {
-      '/': { page: '/amio.cn' }
+      '/': { page: '/' + (process.env.SUB_SITE || 'amio.cn') }
     }
   }
 }
