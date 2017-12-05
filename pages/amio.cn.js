@@ -1,13 +1,13 @@
 import Base from '../components/layout/base.js'
 import Center from '../components/layout/center.js'
-import HeroIcon from '../components/hero-icon.js'
+// import HeroIcon from '../components/hero-icon.js'
 
 export default (props) => {
   return (
     <Base title='Amio'>
       <div className='upside'>
         <Center className='upside'>
-          <HeroIcon />
+          {/* <HeroIcon /> */}
         </Center>
       </div>
 
