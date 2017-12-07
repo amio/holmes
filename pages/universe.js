@@ -5,10 +5,10 @@ export default (props) => {
     <div style={styles.wrapper}>
       <Head>
         <title>The {props.title || props.host}</title>
-        <link rel='icon' type='image/svg+xml' href='/static/asym.svg' />
+        <link rel='icon' size='any' type='image/svg+xml' href='/static/asym.svg' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <div>
+      <div style={styles.content}>
         <style dangerouslySetInnerHTML={{ __html: 'body { margin: 0 }' }} />
         <h1 style={styles.h1}>{ props.title || 'UNIVERSE' }</h1>
         <div style={styles.desc}>
@@ -30,6 +30,10 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+
+  content: {
+    letterSpacing: '0.1em'
   },
 
   desc: {
@@ -55,7 +59,7 @@ const styles = {
 
   h2: {
     fontSize: '16px',
-    fontWeight: 'lighter',
+    fontWeight: 400,
     margin: 0,
     padding: 0
   }
