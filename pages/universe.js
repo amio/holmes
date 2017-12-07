@@ -5,7 +5,7 @@ export default (props) => {
     <div style={styles.wrapper}>
       <Head>
         <title>The {props.title || props.host}</title>
-        <link rel='icon' type='image/svg+xml' href='/static/Amcon.svg' />
+        <link rel='icon' type='image/svg+xml' href='/static/asym.svg' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <div>

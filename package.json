@@ -12,6 +12,7 @@
     "start": "next start",
     "inspect": "npx --node-arg=--inspect next",
     "deploy": "now rm holmes --safe && now && now alias",
+    "d:amio.cn": "SUB_SITE=amio.cn npm run build && now deploy out -n holmes",
     "d:murm.net": "SUB_SITE=murm.net npm run build && now deploy out -n holmes",
     "d:sale": "SUB_SITE=sale npm run build && now deploy out -n holmes"
   },
